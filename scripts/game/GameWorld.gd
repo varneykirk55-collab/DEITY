@@ -37,6 +37,7 @@ func _ready() -> void:
 	terrain.name = "Terrain"
 	add_child(terrain)
 	terrain.setup(GameState.radius(), GameState.grid())
+	cam.set_terrain(terrain)
 	veg_root = Node3D.new()
 	veg_root.name = "Vegetation"
 	add_child(veg_root)
@@ -143,6 +144,11 @@ func _setup_tools() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("pause_menu"):
+		# Escape cancels an active tool before opening the pause interface.
+		if tools and (tools.tool != GameState.ToolId.INSPECT or tools.dragging):
+			tools.cancel_tool()
+			get_viewport().set_input_as_handled()
+			return
 		_toggle_pause()
 		get_viewport().set_input_as_handled()
 	elif event is InputEventKey and event.pressed and not pause_open:

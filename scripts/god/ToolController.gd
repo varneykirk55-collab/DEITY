@@ -169,6 +169,13 @@ func _use(first: bool) -> void:
 			world.cast_cure(p, brush_size)
 
 
+func cancel_tool() -> void:
+	tool = GameState.ToolId.INSPECT
+	dragging = false
+	river_last = Vector3(INF, INF, INF)
+	tool_changed.emit(tool)
+
+
 func _inspect(p: Vector3) -> void:
 	var best_h: Human = null
 	var best_d := 3.5
