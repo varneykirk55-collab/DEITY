@@ -5,6 +5,7 @@ var terrain: TerrainWorld
 var cam: GodCamera
 var weather: WeatherFx
 var fx: DivineFX
+var god_hand: GodHand
 var hud: HUD
 var tools: ToolController
 var pause_ui: PauseMenu
@@ -60,6 +61,10 @@ func _ready() -> void:
 			_populate_nature()
 	_setup_hud()
 	_setup_tools()
+	god_hand = GodHand.new()
+	god_hand.name = "GodHand"
+	add_child(god_hand)
+	god_hand.set_terrain(terrain)
 	_ambient_weather()
 
 
@@ -207,6 +212,12 @@ func _process(delta: float) -> void:
 	if hud:
 		hud.update_stats(GameState.sim_time, GameState.time_scale, GameState.paused, get_tree().get_nodes_in_group("humans").size(), _alive_civs())
 	_ambient_weather()
+	_god_hand_update(delta)
+
+
+func _god_hand_update(delta: float) -> void:
+	if god_hand and tools:
+		god_hand.update(tools.hover, tools.hover_valid, tools.tool, not pause_open, delta)
 
 
 func _tick_sim(sd: float) -> void:
