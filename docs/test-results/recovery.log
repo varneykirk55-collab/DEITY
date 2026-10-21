@@ -1,0 +1,79 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS main menu instantiates
+PASS configuration mode 0
+PASS configuration mode 1
+PASS configuration size 0
+PASS configuration size 1
+PASS configuration size 2
+PASS generated grid size 0
+PASS generated world has no humans 0
+PASS generated nature 0
+PASS combined biomes 0
+PASS distant terrain ray 0
+PASS generated grid size 1
+PASS generated world has no humans 1
+PASS generated nature 1
+PASS combined biomes 1
+PASS distant terrain ray 1
+PASS generated grid size 2
+PASS generated world has no humans 2
+PASS generated nature 2
+PASS combined biomes 2
+PASS distant terrain ray 2
+PASS empty world has no nature
+PASS empty world starts underwater
+PASS terrain normals face up
+PASS water normals face up
+PASS raise terrain
+PASS lower terrain
+PASS terrain brush mountain
+PASS terrain brush valley
+PASS terrain brush island
+PASS terrain brush lake
+PASS terrain brush volcano
+PASS paint biome
+PASS chunk corner dirties all four neighbors
+PASS forest and vegetation
+PASS gather preserves source
+PASS humans form civilization
+PASS human land movement
+PASS human resource delivery
+PASS construction completes
+PASS human birth has child age
+PASS era progression 0
+PASS era progression 1
+PASS era progression 2
+PASS era progression 3
+PASS era progression 4
+PASS era progression 5
+PASS era progression 6
+PASS repeated plague does not reset infection
+PASS cure stops infection
+PASS miracle raises belief
+PASS belief encourages temple
+PASS rebel burns temple
+PASS burning temple no longer counts as active
+PASS animal reproduction
+PASS extinction does not respawn animals
+PASS manual reintroduction
+PASS hunting delivers food
+PASS save writes readable JSON
+PASS load rebuilds correct size geometry
+PASS terrain round trip
+PASS infection progress round trip
+PASS construction progress round trip
+PASS burning building round trip
+PASS vegetation round trip
+PASS wildlife and resources round trip
+PASS civilization round trip
+PASS pause menu pauses
+PASS resume restores running state
+PASS weather power rain
+PASS weather power storm
+PASS weather power snow
+PASS meteor and tornado created
+PASS temporary powers expire
+PASS plague can extinguish civilization
+PASS dead-human cleanup
+RESULT 76 checks, 0 failures

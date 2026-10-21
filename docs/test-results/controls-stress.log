@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS wheel zoom
+PASS right mouse rotation
+PASS middle mouse pan
+PASS movement key 87
+PASS movement key 65
+PASS movement key 83
+PASS movement key 68
+PASS toolbar signal selects tool
+PASS placement tool spawns crowd
+PASS 8x speed signal
+PASS Space resumes selected speed
+PASS clear vegetation tool
+PASS autonomous gathering and construction over 120 simulated seconds
+PASS autonomous era advancement
+TIMING autonomous 120s simulation: 650 ms
+PASS natural aging and death
+PASS separate civilization identity
+PASS war targets hostile civilization
+PASS majority heresy triggers rebellion
+PASS heretic recruitment spreads
+PASS 200+ humans survive bounded 8x stress
+TIMING 120 frames at 8x with 200+ humans: 3658 ms
+RESULT 20 checks, 0 failures

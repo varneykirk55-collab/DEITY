@@ -1,0 +1,17 @@
+.godot/
+*.translation
+*.import
+.import/
+export.cfg
+*.apk
+*.aab
+*.zip
+*.exe
+*.pck
+*.dll
+.DS_Store
+*~
+*.swp
+Thumbs.db
+.arena/
+Unselected files/

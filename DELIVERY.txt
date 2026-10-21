@@ -1,0 +1,10 @@
+Local branch: astra/deity-recovery
+Local commit: c41a2e4
+GitHub publication failed: command-line credentials unavailable; integration returned 403 Resource not accessible by integration. No remote branch was created and nothing was merged.
+
+Open project.godot in Godot 4.7.2 and press F5.
+
+Optional Git history recovery from this folder:
+git clone -b astra/deity-recovery DEITY-recovery.bundle DEITY-restored
+
+See docs/RECOVERY_REPORT.md for 96 passed headless checks and remaining Windows/visual/feature limitations.
