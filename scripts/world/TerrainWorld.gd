@@ -138,7 +138,7 @@ func brush(wx: float, wz: float, size: float, strength: float, mode: String, bio
 				"lower":
 					add_height_i(x, z, -strength * fall * 0.55)
 				"mountain":
-					add_height_i(x, z, strength * fall * fall * 1.35)
+					add_height_i(x, z, strength * fall * fall * 2.5)
 					if heights[idx(x, z)] > 0.2 and biomes[idx(x, z)] == GameState.Biome.OCEAN:
 						set_biome_i(x, z, GameState.Biome.MOUNTAINOUS)
 				"valley":
